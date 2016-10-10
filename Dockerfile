@@ -3,4 +3,4 @@
 FROM centos:latest
 MAINTAINER Yuriy Letser <letser@gmail.com>
 
-RUN yum -y update && yum clean all
+RUN yum -y update && yum -y install ca-certificates && yum clean all
